@@ -1,0 +1,39 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://FNaF 1/89.png" type="Texture" id=1]
+[ext_resource path="res://FNaF 1/92.png" type="Texture" id=2]
+[ext_resource path="res://FNaF 1/94.png" type="Texture" id=3]
+[ext_resource path="res://FNaF 1/96.png" type="Texture" id=4]
+[ext_resource path="res://FNaF 1/98.png" type="Texture" id=5]
+[ext_resource path="res://FNaF 1/100.png" type="Texture" id=6]
+[ext_resource path="res://FNaF 1/101.png" type="Texture" id=7]
+[ext_resource path="res://FNaF 1/102.png" type="Texture" id=8]
+[ext_resource path="res://FNaF 1/88.png" type="Texture" id=9]
+[ext_resource path="res://FNaF 1/97.png" type="Texture" id=10]
+[ext_resource path="res://FNaF 1/99.png" type="Texture" id=11]
+[ext_resource path="res://FNaF 1/93.png" type="Texture" id=12]
+[ext_resource path="res://FNaF 1/95.png" type="Texture" id=13]
+[ext_resource path="res://FNaF 1/91.png" type="Texture" id=14]
+[ext_resource path="res://Doors/Scripts/Doors.gd" type="Script" id=15]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 9 ), ExtResource( 1 ), ExtResource( 14 ), ExtResource( 2 ), ExtResource( 12 ), ExtResource( 3 ), ExtResource( 13 ), ExtResource( 4 ), ExtResource( 10 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": false,
+"name": "Closing",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 11 ), ExtResource( 5 ), ExtResource( 10 ), ExtResource( 4 ), ExtResource( 13 ), ExtResource( 3 ), ExtResource( 12 ), ExtResource( 2 ), ExtResource( 14 ), ExtResource( 1 ), ExtResource( 9 ) ],
+"loop": false,
+"name": "Opening",
+"speed": 24.0
+} ]
+
+[node name="Doors" type="Node2D"]
+script = ExtResource( 15 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Closing"
+
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

@@ -1,0 +1,44 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://FNaF 1/316.png" type="Texture" id=1]
+[ext_resource path="res://FNaF 1/315.png" type="Texture" id=2]
+[ext_resource path="res://FNaF 1/318.png" type="Texture" id=3]
+[ext_resource path="res://FNaF 1/317.png" type="Texture" id=4]
+[ext_resource path="res://FNaF 1/325.png" type="Texture" id=5]
+[ext_resource path="res://FNaF 1/323.png" type="Texture" id=6]
+[ext_resource path="res://FNaF 1/320.png" type="Texture" id=7]
+[ext_resource path="res://FNaF 1/321.png" type="Texture" id=8]
+[ext_resource path="res://FNaF 1/322.png" type="Texture" id=9]
+[ext_resource path="res://FNaF 1/319.png" type="Texture" id=10]
+[ext_resource path="res://FNaF 1/324.png" type="Texture" id=11]
+[ext_resource path="res://FNaF 1/309.png" type="Texture" id=12]
+[ext_resource path="res://FNaF 1/311.png" type="Texture" id=13]
+[ext_resource path="res://FNaF 1/308.png" type="Texture" id=14]
+[ext_resource path="res://FNaF 1/312.png" type="Texture" id=15]
+[ext_resource path="res://FNaF 1/313.png" type="Texture" id=16]
+[ext_resource path="res://FNaF 1/310.png" type="Texture" id=17]
+[ext_resource path="res://FNaF 1/314.png" type="Texture" id=18]
+[ext_resource path="res://FNaF 1/307.png" type="Texture" id=19]
+[ext_resource path="res://Jumpscares/Scripts/Freddy Jumpscare.gd" type="Script" id=20]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 19 ), ExtResource( 14 ), ExtResource( 12 ), ExtResource( 17 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 18 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 11 ), ExtResource( 5 ) ],
+"loop": false,
+"name": "default",
+"speed": 60.0
+} ]
+
+[node name="Freddy Jumpscare" type="Node2D"]
+position = Vector2( 640, 360 )
+script = ExtResource( 20 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

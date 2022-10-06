@@ -1,0 +1,980 @@
+[gd_scene load_steps=239 format=2]
+
+[ext_resource path="res://FNaF 1/39.png" type="Texture" id=1]
+[ext_resource path="res://Office/Scripts/Office.gd" type="Script" id=2]
+[ext_resource path="res://FNaF 1/59.png" type="Texture" id=3]
+[ext_resource path="res://FNaF 1/60.png" type="Texture" id=4]
+[ext_resource path="res://Doors/Door Buttons/Assets/Door Button.tscn" type="PackedScene" id=5]
+[ext_resource path="res://FNaF 1/131.png" type="Texture" id=6]
+[ext_resource path="res://FNaF 1/134.png" type="Texture" id=7]
+[ext_resource path="res://FNaF 1/135.png" type="Texture" id=8]
+[ext_resource path="res://FNaF 1/47.png" type="Texture" id=9]
+[ext_resource path="res://FNaF 1/58.png" type="Texture" id=10]
+[ext_resource path="res://FNaF 1/127.png" type="Texture" id=11]
+[ext_resource path="res://Doors/Assets/Doors.tscn" type="PackedScene" id=12]
+[ext_resource path="res://FNaF 1/121.png" type="Texture" id=13]
+[ext_resource path="res://FNaF 1/118.png" type="Texture" id=14]
+[ext_resource path="res://FNaF 1/117.png" type="Texture" id=15]
+[ext_resource path="res://FNaF 1/106.png" type="Texture" id=16]
+[ext_resource path="res://FNaF 1/107.png" type="Texture" id=17]
+[ext_resource path="res://FNaF 1/108.png" type="Texture" id=18]
+[ext_resource path="res://FNaF 1/104.png" type="Texture" id=19]
+[ext_resource path="res://FNaF 1/115.png" type="Texture" id=20]
+[ext_resource path="res://FNaF 1/111.png" type="Texture" id=21]
+[ext_resource path="res://FNaF 1/116.png" type="Texture" id=22]
+[ext_resource path="res://FNaF 1/109.png" type="Texture" id=23]
+[ext_resource path="res://FNaF 1/110.png" type="Texture" id=24]
+[ext_resource path="res://FNaF 1/112.png" type="Texture" id=25]
+[ext_resource path="res://FNaF 1/113.png" type="Texture" id=26]
+[ext_resource path="res://FNaF 1/114.png" type="Texture" id=27]
+[ext_resource path="res://FNaF 1/305.png" type="Texture" id=28]
+[ext_resource path="res://FNaF 1/304.png" type="Texture" id=29]
+[ext_resource path="res://FNaF 1/189.png" type="Texture" id=30]
+[ext_resource path="res://FNaF 1/213.png" type="Texture" id=31]
+[ext_resource path="res://FNaF 1/212.png" type="Texture" id=32]
+[ext_resource path="res://FNaF 1/456.png" type="Texture" id=33]
+[ext_resource path="res://FNaF 1/455.png" type="Texture" id=34]
+[ext_resource path="res://FNaF 1/214.png" type="Texture" id=35]
+[ext_resource path="res://Power/Assets/Power Left.tscn" type="PackedScene" id=36]
+[ext_resource path="res://FNaF 1/251.png" type="Texture" id=37]
+[ext_resource path="res://Font/Volter__28Goldfish_29.ttf" type="DynamicFontData" id=38]
+[ext_resource path="res://FNaF 1/475.png" type="Texture" id=39]
+[ext_resource path="res://Camera trigger/Assets/Camera Trigger.tscn" type="PackedScene" id=40]
+[ext_resource path="res://Static/Assets/Static.tscn" type="PackedScene" id=41]
+[ext_resource path="res://FNaF 1/11.png" type="Texture" id=42]
+[ext_resource path="res://FNaF 1/201.png" type="Texture" id=43]
+[ext_resource path="res://FNaF 1/7.png" type="Texture" id=44]
+[ext_resource path="res://FNaF 1/145.png" type="Texture" id=45]
+[ext_resource path="res://FNaF 1/149.png" type="Texture" id=46]
+[ext_resource path="res://FNaF 1/155.png" type="Texture" id=47]
+[ext_resource path="res://FNaF 1/161.png" type="Texture" id=48]
+[ext_resource path="res://FNaF 1/157.png" type="Texture" id=49]
+[ext_resource path="res://FNaF 1/609.png" type="Texture" id=50]
+[ext_resource path="res://FNaF 1/160.png" type="Texture" id=51]
+[ext_resource path="res://FNaF 1/608.png" type="Texture" id=52]
+[ext_resource path="res://FNaF 1/163.png" type="Texture" id=53]
+[ext_resource path="res://FNaF 1/606.png" type="Texture" id=54]
+[ext_resource path="res://FNaF 1/607.png" type="Texture" id=55]
+[ext_resource path="res://FNaF 1/612.png" type="Texture" id=56]
+[ext_resource path="res://FNaF 1/613.png" type="Texture" id=57]
+[ext_resource path="res://FNaF 1/611.png" type="Texture" id=58]
+[ext_resource path="res://FNaF 1/610.png" type="Texture" id=59]
+[ext_resource path="res://FNaF 1/617.png" type="Texture" id=60]
+[ext_resource path="res://FNaF 1/616.png" type="Texture" id=61]
+[ext_resource path="res://FNaF 1/614.png" type="Texture" id=62]
+[ext_resource path="res://FNaF 1/615.png" type="Texture" id=63]
+[ext_resource path="res://FNaF 1/620.png" type="Texture" id=64]
+[ext_resource path="res://FNaF 1/618.png" type="Texture" id=65]
+[ext_resource path="res://FNaF 1/619.png" type="Texture" id=66]
+[ext_resource path="res://FNaF 1/621.png" type="Texture" id=67]
+[ext_resource path="res://Camera Buttons/Assets/Camera buttons.tscn" type="PackedScene" id=68]
+[ext_resource path="res://FNaF 1/19.png" type="Texture" id=69]
+[ext_resource path="res://FNaF 1/66.png" type="Texture" id=70]
+[ext_resource path="res://FNaF 1/48.png" type="Texture" id=71]
+[ext_resource path="res://FNaF 1/44.png" type="Texture" id=72]
+[ext_resource path="res://FNaF 1/43.png" type="Texture" id=73]
+[ext_resource path="res://FNaF 1/62.png" type="Texture" id=74]
+[ext_resource path="res://FNaF 1/0.png" type="Texture" id=75]
+[ext_resource path="res://FNaF 1/49.png" type="Texture" id=76]
+[ext_resource path="res://FNaF 1/67.png" type="Texture" id=77]
+[ext_resource path="res://FNaF 1/83.png" type="Texture" id=78]
+[ext_resource path="res://FNaF 1/54.png" type="Texture" id=79]
+[ext_resource path="res://FNaF 1/72.png" type="Texture" id=80]
+[ext_resource path="res://FNaF 1/70.png" type="Texture" id=81]
+[ext_resource path="res://FNaF 1/71.png" type="Texture" id=82]
+[ext_resource path="res://FNaF 1/77.png" type="Texture" id=83]
+[ext_resource path="res://FNaF 1/74.png" type="Texture" id=84]
+[ext_resource path="res://FNaF 1/76.png" type="Texture" id=85]
+[ext_resource path="res://FNaF 1/50.png" type="Texture" id=86]
+[ext_resource path="res://FNaF 1/79.png" type="Texture" id=87]
+[ext_resource path="res://FNaF 1/75.png" type="Texture" id=88]
+[ext_resource path="res://FNaF 1/78.png" type="Texture" id=89]
+[ext_resource path="res://FNaF 1/41.png" type="Texture" id=90]
+[ext_resource path="res://FNaF 1/42.png" type="Texture" id=91]
+[ext_resource path="res://Camera Scrolling/Assets/Camera Scrolling.tscn" type="PackedScene" id=92]
+[ext_resource path="res://Animatronics/Bonnie/Assets/Bonnie.tscn" type="PackedScene" id=93]
+[ext_resource path="res://FNaF 1/68.png" type="Texture" id=94]
+[ext_resource path="res://FNaF 1/90.png" type="Texture" id=95]
+[ext_resource path="res://FNaF 1/120.png" type="Texture" id=96]
+[ext_resource path="res://FNaF 1/205.png" type="Texture" id=97]
+[ext_resource path="res://FNaF 1/555.png" type="Texture" id=98]
+[ext_resource path="res://FNaF 1/206.png" type="Texture" id=99]
+[ext_resource path="res://FNaF 1/188.png" type="Texture" id=100]
+[ext_resource path="res://FNaF 1/190.png" type="Texture" id=101]
+[ext_resource path="res://FNaF 1/225.png" type="Texture" id=102]
+[ext_resource path="res://FNaF 1/291.png" type="Texture" id=103]
+[ext_resource path="res://FNaF 1/296.png" type="Texture" id=104]
+[ext_resource path="res://FNaF 1/301.png" type="Texture" id=105]
+[ext_resource path="res://FNaF 1/295.png" type="Texture" id=106]
+[ext_resource path="res://FNaF 1/303.png" type="Texture" id=107]
+[ext_resource path="res://FNaF 1/298.png" type="Texture" id=108]
+[ext_resource path="res://FNaF 1/300.png" type="Texture" id=109]
+[ext_resource path="res://FNaF 1/294.png" type="Texture" id=110]
+[ext_resource path="res://FNaF 1/299.png" type="Texture" id=111]
+[ext_resource path="res://FNaF 1/293.png" type="Texture" id=112]
+[ext_resource path="res://FNaF 1/297.png" type="Texture" id=113]
+[ext_resource path="res://Animatronics/Chica/Assets/Chica.tscn" type="PackedScene" id=114]
+[ext_resource path="res://FNaF 1/223.png" type="Texture" id=115]
+[ext_resource path="res://FNaF 1/224.png" type="Texture" id=116]
+[ext_resource path="res://FNaF 1/222.png" type="Texture" id=117]
+[ext_resource path="res://FNaF 1/215.png" type="Texture" id=118]
+[ext_resource path="res://FNaF 1/219.png" type="Texture" id=119]
+[ext_resource path="res://FNaF 1/221.png" type="Texture" id=120]
+[ext_resource path="res://FNaF 1/220.png" type="Texture" id=121]
+[ext_resource path="res://FNaF 1/226.png" type="Texture" id=122]
+[ext_resource path="res://FNaF 1/227.png" type="Texture" id=123]
+[ext_resource path="res://FNaF 1/235.png" type="Texture" id=124]
+[ext_resource path="res://FNaF 1/236.png" type="Texture" id=125]
+[ext_resource path="res://FNaF 1/229.png" type="Texture" id=126]
+[ext_resource path="res://FNaF 1/237.png" type="Texture" id=127]
+[ext_resource path="res://FNaF 1/232.png" type="Texture" id=128]
+[ext_resource path="res://FNaF 1/239.png" type="Texture" id=129]
+[ext_resource path="res://FNaF 1/231.png" type="Texture" id=130]
+[ext_resource path="res://FNaF 1/228.png" type="Texture" id=131]
+[ext_resource path="res://FNaF 1/233.png" type="Texture" id=132]
+[ext_resource path="res://FNaF 1/230.png" type="Texture" id=133]
+[ext_resource path="res://FNaF 1/234.png" type="Texture" id=134]
+[ext_resource path="res://FNaF 1/211.png" type="Texture" id=135]
+[ext_resource path="res://FNaF 1/338.png" type="Texture" id=136]
+[ext_resource path="res://FNaF 1/240.png" type="Texture" id=137]
+[ext_resource path="res://FNaF 1/553.png" type="Texture" id=138]
+[ext_resource path="res://FNaF 1/285.png" type="Texture" id=139]
+[ext_resource path="res://FNaF 1/302.png" type="Texture" id=140]
+[ext_resource path="res://FNaF 1/306.png" type="Texture" id=141]
+[ext_resource path="res://FNaF 1/284.png" type="Texture" id=142]
+[ext_resource path="res://FNaF 1/280.png" type="Texture" id=143]
+[ext_resource path="res://FNaF 1/332.png" type="Texture" id=144]
+[ext_resource path="res://FNaF 1/329.png" type="Texture" id=145]
+[ext_resource path="res://FNaF 1/330.png" type="Texture" id=146]
+[ext_resource path="res://FNaF 1/336.png" type="Texture" id=147]
+[ext_resource path="res://FNaF 1/287.png" type="Texture" id=148]
+[ext_resource path="res://FNaF 1/334.png" type="Texture" id=149]
+[ext_resource path="res://FNaF 1/289.png" type="Texture" id=150]
+[ext_resource path="res://FNaF 1/337.png" type="Texture" id=151]
+[ext_resource path="res://FNaF 1/282.png" type="Texture" id=152]
+[ext_resource path="res://FNaF 1/283.png" type="Texture" id=153]
+[ext_resource path="res://FNaF 1/327.png" type="Texture" id=154]
+[ext_resource path="res://FNaF 1/288.png" type="Texture" id=155]
+[ext_resource path="res://FNaF 1/290.png" type="Texture" id=156]
+[ext_resource path="res://FNaF 1/331.png" type="Texture" id=157]
+[ext_resource path="res://FNaF 1/333.png" type="Texture" id=158]
+[ext_resource path="res://FNaF 1/335.png" type="Texture" id=159]
+[ext_resource path="res://FNaF 1/340.png" type="Texture" id=160]
+[ext_resource path="res://FNaF 1/286.png" type="Texture" id=161]
+[ext_resource path="res://FNaF 1/292.png" type="Texture" id=162]
+[ext_resource path="res://Animatronics/Foxy/Assets/Foxy.tscn" type="PackedScene" id=163]
+[ext_resource path="res://FNaF 1/412.png" type="Texture" id=164]
+[ext_resource path="res://FNaF 1/410.png" type="Texture" id=165]
+[ext_resource path="res://FNaF 1/413.png" type="Texture" id=166]
+[ext_resource path="res://FNaF 1/406.png" type="Texture" id=167]
+[ext_resource path="res://FNaF 1/403.png" type="Texture" id=168]
+[ext_resource path="res://FNaF 1/402.png" type="Texture" id=169]
+[ext_resource path="res://FNaF 1/405.png" type="Texture" id=170]
+[ext_resource path="res://FNaF 1/411.png" type="Texture" id=171]
+[ext_resource path="res://FNaF 1/399.png" type="Texture" id=172]
+[ext_resource path="res://FNaF 1/408.png" type="Texture" id=173]
+[ext_resource path="res://FNaF 1/404.png" type="Texture" id=174]
+[ext_resource path="res://FNaF 1/401.png" type="Texture" id=175]
+[ext_resource path="res://FNaF 1/407.png" type="Texture" id=176]
+[ext_resource path="res://FNaF 1/409.png" type="Texture" id=177]
+[ext_resource path="res://FNaF 1/400.png" type="Texture" id=178]
+[ext_resource path="res://FNaF 1/415.png" type="Texture" id=179]
+[ext_resource path="res://FNaF 1/396.png" type="Texture" id=180]
+[ext_resource path="res://FNaF 1/243.png" type="Texture" id=181]
+[ext_resource path="res://FNaF 1/397.png" type="Texture" id=182]
+[ext_resource path="res://FNaF 1/398.png" type="Texture" id=183]
+[ext_resource path="res://FNaF 1/242.png" type="Texture" id=184]
+[ext_resource path="res://Animatronics/Freddy/Assets/Freddy.tscn" type="PackedScene" id=185]
+[ext_resource path="res://FNaF 1/484.png" type="Texture" id=186]
+[ext_resource path="res://FNaF 1/492.png" type="Texture" id=187]
+[ext_resource path="res://FNaF 1/494.png" type="Texture" id=188]
+[ext_resource path="res://FNaF 1/487.png" type="Texture" id=189]
+[ext_resource path="res://FNaF 1/486.png" type="Texture" id=190]
+[ext_resource path="res://FNaF 1/514.png" type="Texture" id=191]
+[ext_resource path="res://FNaF 1/499.png" type="Texture" id=192]
+[ext_resource path="res://FNaF 1/501.png" type="Texture" id=193]
+[ext_resource path="res://FNaF 1/503.png" type="Texture" id=194]
+[ext_resource path="res://FNaF 1/504.png" type="Texture" id=195]
+[ext_resource path="res://FNaF 1/508.png" type="Texture" id=196]
+[ext_resource path="res://FNaF 1/515.png" type="Texture" id=197]
+[ext_resource path="res://FNaF 1/489.png" type="Texture" id=198]
+[ext_resource path="res://FNaF 1/491.png" type="Texture" id=199]
+[ext_resource path="res://FNaF 1/493.png" type="Texture" id=200]
+[ext_resource path="res://FNaF 1/497.png" type="Texture" id=201]
+[ext_resource path="res://FNaF 1/498.png" type="Texture" id=202]
+[ext_resource path="res://FNaF 1/500.png" type="Texture" id=203]
+[ext_resource path="res://FNaF 1/505.png" type="Texture" id=204]
+[ext_resource path="res://FNaF 1/495.png" type="Texture" id=205]
+[ext_resource path="res://FNaF 1/496.png" type="Texture" id=206]
+[ext_resource path="res://FNaF 1/502.png" type="Texture" id=207]
+[ext_resource path="res://FNaF 1/490.png" type="Texture" id=208]
+[ext_resource path="res://FNaF 1/506.png" type="Texture" id=209]
+[ext_resource path="res://FNaF 1/507.png" type="Texture" id=210]
+[ext_resource path="res://FNaF 1/509.png" type="Texture" id=211]
+[ext_resource path="res://FNaF 1/510.png" type="Texture" id=212]
+[ext_resource path="res://FNaF 1/511.png" type="Texture" id=213]
+[ext_resource path="res://FNaF 1/512.png" type="Texture" id=214]
+[ext_resource path="res://FNaF 1/513.png" type="Texture" id=215]
+[ext_resource path="res://FNaF 1/516.png" type="Texture" id=216]
+[ext_resource path="res://FNaF 1/518.png" type="Texture" id=217]
+[ext_resource path="res://FNaF 1/517.png" type="Texture" id=218]
+[ext_resource path="res://FNaF 1/FNaF 1 Audio/Buzz_Fan_Florescent2.wav" type="AudioStream" id=219]
+[ext_resource path="res://FNaF 1/FNaF 1 Audio/COMPUTER_DIGITAL_L2076505.wav" type="AudioStream" id=220]
+[ext_resource path="res://FNaF 1/FNaF 1 Audio/BallastHumMedium2.wav" type="AudioStream" id=221]
+[ext_resource path="res://FNaF 1/FNaF 1 Audio/music box.wav" type="AudioStream" id=222]
+[ext_resource path="res://FNaF 1/FNaF 1 Audio/powerdown.wav" type="AudioStream" id=223]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 103 ), ExtResource( 112 ), ExtResource( 110 ), ExtResource( 106 ), ExtResource( 104 ), ExtResource( 113 ), ExtResource( 108 ), ExtResource( 111 ), ExtResource( 109 ), ExtResource( 105 ), ExtResource( 107 ) ],
+"loop": false,
+"name": "Bonnie Jumpscare",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 102 ) ],
+"loop": true,
+"name": "Bonnie in office",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 131 ), ExtResource( 126 ), ExtResource( 133 ), ExtResource( 130 ), ExtResource( 128 ), ExtResource( 132 ), ExtResource( 134 ), ExtResource( 124 ), ExtResource( 125 ), ExtResource( 127 ), ExtResource( 129 ) ],
+"loop": false,
+"name": "Chica Jumpscare",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 123 ) ],
+"loop": true,
+"name": "Chica in office",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 166 ), ExtResource( 184 ), ExtResource( 179 ), ExtResource( 181 ), ExtResource( 180 ), ExtResource( 182 ), ExtResource( 183 ), ExtResource( 172 ), ExtResource( 178 ), ExtResource( 175 ), ExtResource( 169 ), ExtResource( 168 ), ExtResource( 174 ), ExtResource( 170 ), ExtResource( 167 ), ExtResource( 176 ), ExtResource( 173 ), ExtResource( 177 ), ExtResource( 165 ), ExtResource( 171 ), ExtResource( 164 ) ],
+"loop": false,
+"name": "Foxy Jumpscare",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 198 ), ExtResource( 208 ), ExtResource( 199 ), ExtResource( 200 ), ExtResource( 205 ), ExtResource( 206 ), ExtResource( 201 ), ExtResource( 202 ), ExtResource( 192 ), ExtResource( 203 ), ExtResource( 193 ), ExtResource( 207 ), ExtResource( 194 ), ExtResource( 195 ), ExtResource( 204 ), ExtResource( 209 ), ExtResource( 210 ), ExtResource( 196 ), ExtResource( 211 ), ExtResource( 212 ), ExtResource( 213 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 191 ), ExtResource( 197 ), ExtResource( 216 ), ExtResource( 218 ), ExtResource( 217 ) ],
+"loop": false,
+"name": "Freddy Jumpscare",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 10 ) ],
+"loop": true,
+"name": "Left Light",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 28 ) ],
+"loop": true,
+"name": "Power Outage Freddy",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 29 ) ],
+"loop": true,
+"name": "Power outage",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "Right Light",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 24.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "Door",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "Door And Light",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "Light",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=6]
+resource_name = "Default"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "Flicker"
+length = 0.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.2, 0.3, 0.35, 0.45, 0.5, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false, true, false, true, false, true, false, true ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "Flicker off"
+
+[sub_resource type="Animation" id=9]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 19 ), ExtResource( 13 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 21 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 20 ), ExtResource( 22 ), ExtResource( 15 ), ExtResource( 14 ) ],
+"loop": false,
+"name": "Closing",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 22 ), ExtResource( 20 ), ExtResource( 27 ), ExtResource( 26 ), ExtResource( 25 ), ExtResource( 21 ), ExtResource( 24 ), ExtResource( 23 ), ExtResource( 18 ), ExtResource( 17 ), ExtResource( 16 ), ExtResource( 13 ), ExtResource( 19 ) ],
+"loop": false,
+"name": "Opening",
+"speed": 24.0
+} ]
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 34 ) ],
+"loop": true,
+"name": "Five",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 33 ) ],
+"loop": true,
+"name": "Four",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 32 ) ],
+"loop": true,
+"name": "One",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 35 ) ],
+"loop": true,
+"name": "Three",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 31 ) ],
+"loop": true,
+"name": "Two",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=10]
+size = 40
+font_data = ExtResource( 38 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 20
+font_data = ExtResource( 38 )
+
+[sub_resource type="SpriteFrames" id=12]
+animations = [ {
+"frames": [ ExtResource( 44 ), ExtResource( 43 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+} ]
+
+[sub_resource type="SpriteFrames" id=13]
+animations = [ {
+"frames": [ ExtResource( 46 ), ExtResource( 47 ) ],
+"loop": true,
+"name": "Cam 1 a",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 48 ), ExtResource( 49 ) ],
+"loop": true,
+"name": "Cam 1 b",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 54 ), ExtResource( 55 ) ],
+"loop": true,
+"name": "Cam 1 c",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 53 ), ExtResource( 51 ) ],
+"loop": true,
+"name": "Cam 2 A",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 59 ), ExtResource( 58 ) ],
+"loop": true,
+"name": "Cam 2 B",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 56 ), ExtResource( 57 ) ],
+"loop": true,
+"name": "Cam 3",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 65 ), ExtResource( 66 ) ],
+"loop": true,
+"name": "Cam 4 A",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 64 ), ExtResource( 67 ) ],
+"loop": true,
+"name": "Cam 4 B",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 52 ), ExtResource( 50 ) ],
+"loop": true,
+"name": "Cam 5",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 62 ), ExtResource( 63 ) ],
+"loop": true,
+"name": "Cam 6",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 61 ), ExtResource( 60 ) ],
+"loop": true,
+"name": "Cam 7",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 45 ) ],
+"loop": true,
+"name": "Final",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=14]
+animations = [ {
+"frames": [ ExtResource( 82 ) ],
+"loop": true,
+"name": "Backstage",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 83 ) ],
+"loop": true,
+"name": "Bathrooms",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 80 ) ],
+"loop": true,
+"name": "Dining Area",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 87 ) ],
+"loop": true,
+"name": "East Hall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 88 ) ],
+"loop": true,
+"name": "East Hall Corner",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 89 ) ],
+"loop": true,
+"name": "Kitchen",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 81 ) ],
+"loop": true,
+"name": "Pirate Cove",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 79 ) ],
+"loop": true,
+"name": "Show stage",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 86 ) ],
+"loop": true,
+"name": "Supply Closet",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 84 ) ],
+"loop": true,
+"name": "West Hall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 85 ) ],
+"loop": true,
+"name": "West Hall Corner",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=15]
+animations = [ {
+"frames": [ ExtResource( 78 ) ],
+"loop": true,
+"name": "Backstage",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 97 ) ],
+"loop": true,
+"name": "Backstage Bonnie 1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 98 ) ],
+"loop": true,
+"name": "Backstage Bonnie 2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 100 ) ],
+"loop": true,
+"name": "Bonnie Corner",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 99 ) ],
+"loop": true,
+"name": "Bonnie Hallway",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 101 ) ],
+"loop": true,
+"name": "Bonnie Supply Closet",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 95 ) ],
+"loop": true,
+"name": "Bonnie dining 1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 96 ) ],
+"loop": true,
+"name": "Bonnie dining 2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 121 ) ],
+"loop": true,
+"name": "Chica Corner",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 118 ) ],
+"loop": true,
+"name": "Chica Dining 1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 117 ) ],
+"loop": true,
+"name": "Chica Dining 2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 120 ) ],
+"loop": true,
+"name": "Chica Hallway 1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 122 ) ],
+"loop": true,
+"name": "Chica Hallway 2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 119 ) ],
+"loop": true,
+"name": "Chica Restrooms",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 71 ) ],
+"loop": true,
+"name": "Dining Area",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 77 ) ],
+"loop": true,
+"name": "East Hall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 76 ) ],
+"loop": true,
+"name": "East Hall Corner",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 138 ) ],
+"loop": true,
+"name": "Foxy Gone It's me",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 143 ), ExtResource( 152 ), ExtResource( 153 ), ExtResource( 142 ), ExtResource( 139 ), ExtResource( 161 ), ExtResource( 148 ), ExtResource( 155 ), ExtResource( 150 ), ExtResource( 156 ), ExtResource( 162 ), ExtResource( 140 ), ExtResource( 141 ), ExtResource( 154 ), ExtResource( 145 ), ExtResource( 146 ), ExtResource( 157 ), ExtResource( 144 ), ExtResource( 158 ), ExtResource( 149 ), ExtResource( 159 ), ExtResource( 147 ), ExtResource( 151 ), ExtResource( 160 ) ],
+"loop": false,
+"name": "Foxy Running",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 137 ) ],
+"loop": true,
+"name": "Foxy gone",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 136 ) ],
+"loop": true,
+"name": "Foxy on his way",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 135 ) ],
+"loop": true,
+"name": "Foxy peeking",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 190 ) ],
+"loop": true,
+"name": "Freddy Corner",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 187 ) ],
+"loop": true,
+"name": "Freddy Dining Area",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 189 ) ],
+"loop": true,
+"name": "Freddy Hall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 188 ) ],
+"loop": true,
+"name": "Freddy Restrooms",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "Kitchen",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 70 ) ],
+"loop": true,
+"name": "Pirate Cove",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 90 ) ],
+"loop": true,
+"name": "Restrooms",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 69 ) ],
+"loop": true,
+"name": "Show Stage",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 186 ) ],
+"loop": true,
+"name": "Show Stage Empty",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 116 ) ],
+"loop": true,
+"name": "Show Stage Only Freddy",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 94 ) ],
+"loop": true,
+"name": "Stage Bonnie Gone",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 115 ) ],
+"loop": true,
+"name": "Stage chica gone",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 74 ) ],
+"loop": true,
+"name": "Supply Closet",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 73 ) ],
+"loop": true,
+"name": "West Hall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 75 ) ],
+"loop": true,
+"name": "West Hall Corner",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 72 ) ],
+"loop": true,
+"name": "West Hall Light On",
+"speed": 5.0
+} ]
+
+[node name="Office" type="Node2D"]
+position = Vector2( 640, 360 )
+script = ExtResource( 2 )
+
+[node name="Background" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Freddy Jumpscare"
+frame = 27
+playing = true
+
+[node name="Fan" type="AnimatedSprite" parent="Background"]
+position = Vector2( 47, 41 )
+frames = SubResource( 2 )
+frame = 1
+playing = true
+
+[node name="Fan buzzing" type="AudioStreamPlayer" parent="Background/Fan"]
+stream = ExtResource( 219 )
+autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+limit_left = -160
+limit_top = 0
+limit_right = 1420
+limit_bottom = 0
+drag_margin_h_enabled = true
+smoothing_enabled = true
+smoothing_speed = 1.5
+
+[node name="Door Button L" parent="." instance=ExtResource( 5 )]
+position = Vector2( -760, 9 )
+
+[node name="Door Button R" parent="." instance=ExtResource( 5 )]
+position = Vector2( 735, 9 )
+
+[node name="AnimatedSprite" parent="Door Button R" index="0"]
+frames = SubResource( 3 )
+
+[node name="Door Button" parent="Door Button R" index="1"]
+margin_left = -24.0
+margin_right = 15.0
+
+[node name="Light Button" parent="Door Button R" index="2"]
+margin_left = -23.0
+margin_right = 16.0
+
+[node name="Light flicker timer" type="Timer" parent="."]
+wait_time = 0.05
+autostart = true
+
+[node name="Power Outage Flicker" type="ColorRect" parent="."]
+margin_left = -803.0
+margin_top = -361.0
+margin_right = 797.0
+margin_bottom = 359.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Power Outage Flicker"]
+anims/Default = SubResource( 6 )
+anims/Flicker = SubResource( 8 )
+"anims/Flicker off" = SubResource( 7 )
+anims/RESET = SubResource( 9 )
+
+[node name="Door L" parent="." instance=ExtResource( 12 )]
+position = Vector2( -617, 0 )
+
+[node name="Door R" parent="." instance=ExtResource( 12 )]
+position = Vector2( 593, 0 )
+
+[node name="AnimatedSprite" parent="Door R" index="0"]
+position = Vector2( -4, 0 )
+frames = SubResource( 4 )
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Usage Text" type="Sprite" parent="UI"]
+position = Vector2( 67, 683 )
+texture = ExtResource( 30 )
+
+[node name="Usage" type="AnimatedSprite" parent="UI/Usage Text"]
+position = Vector2( 93, 0 )
+frames = SubResource( 5 )
+animation = "Five"
+
+[node name="Power Left" parent="UI" instance=ExtResource( 36 )]
+position = Vector2( 99, 648 )
+
+[node name="AM" type="Sprite" parent="UI"]
+position = Vector2( 1222, 46 )
+texture = ExtResource( 37 )
+
+[node name="Time" type="Label" parent="UI/AM"]
+margin_left = -73.0
+margin_top = -22.0
+margin_right = -28.0
+margin_bottom = 28.0
+custom_fonts/font = SubResource( 10 )
+text = "12"
+align = 2
+
+[node name="Night" type="Sprite" parent="UI"]
+position = Vector2( 1188, 77 )
+texture = ExtResource( 39 )
+
+[node name="Night Text" type="Label" parent="UI/Night"]
+margin_left = 39.0
+margin_top = -12.0
+margin_right = 46.0
+margin_bottom = 11.0
+custom_fonts/font = SubResource( 11 )
+text = "1"
+
+[node name="Camera Trigger" parent="UI" instance=ExtResource( 40 )]
+position = Vector2( 529, 685 )
+
+[node name="Camera Scrolling" parent="UI" instance=ExtResource( 92 )]
+
+[node name="Power Outage Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Freddy Duration" type="Timer" parent="."]
+one_shot = true
+
+[node name="Scaretimer powerout" type="Timer" parent="."]
+
+[node name="Night timer" type="Timer" parent="."]
+wait_time = 90.0
+autostart = true
+
+[node name="Cams" type="Node2D" parent="."]
+
+[node name="Cam UI" type="CanvasLayer" parent="Cams"]
+
+[node name="Kitchen" type="ColorRect" parent="Cams/Cam UI"]
+margin_right = 1280.0
+margin_bottom = 720.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Signal Cut" type="ColorRect" parent="Cams/Cam UI"]
+visible = false
+margin_right = 1280.0
+margin_bottom = 720.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Timer" type="Timer" parent="Cams/Cam UI/Signal Cut"]
+
+[node name="Garble" type="AudioStreamPlayer" parent="Cams/Cam UI/Signal Cut"]
+
+[node name="Static" parent="Cams/Cam UI" instance=ExtResource( 41 )]
+
+[node name="Border" type="Sprite" parent="Cams/Cam UI"]
+position = Vector2( 640, 360 )
+texture = ExtResource( 42 )
+
+[node name="Red dot" type="AnimatedSprite" parent="Cams/Cam UI"]
+position = Vector2( 65, 61 )
+frames = SubResource( 12 )
+frame = 1
+playing = true
+
+[node name="Minimap" type="AnimatedSprite" parent="Cams/Cam UI"]
+position = Vector2( 1052, 515 )
+frames = SubResource( 13 )
+animation = "Final"
+playing = true
+
+[node name="Cam text" type="AnimatedSprite" parent="Cams/Cam UI"]
+position = Vector2( 946, 311 )
+frames = SubResource( 14 )
+animation = "Show stage"
+
+[node name="Camera buttons" parent="Cams/Cam UI" instance=ExtResource( 68 )]
+
+[node name="Cam disabled audio only" type="Sprite" parent="Cams/Cam UI"]
+position = Vector2( 594, 83 )
+texture = ExtResource( 91 )
+
+[node name="Freddy" parent="Cams/Cam UI" instance=ExtResource( 185 )]
+visible = false
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Bonnie" parent="Cams/Cam UI" instance=ExtResource( 93 )]
+visible = false
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Chica" parent="Cams/Cam UI" instance=ExtResource( 114 )]
+visible = false
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Foxy" parent="Cams/Cam UI" instance=ExtResource( 163 )]
+visible = false
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Camera feed" type="AnimatedSprite" parent="Cams"]
+frames = SubResource( 15 )
+animation = "Freddy Corner"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Cams/Camera feed"]
+stream = ExtResource( 220 )
+
+[node name="Kitchen sound" type="AudioStreamPlayer" parent="Cams/Camera feed"]
+
+[node name="Foxy Countdown" type="Timer" parent="."]
+wait_time = 25.0
+
+[node name="Light sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 221 )
+
+[node name="Freddy Music Box" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 222 )
+
+[node name="Power Outage" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 223 )
+
+[connection signal="animation_finished" from="Background" to="." method="_on_Background_animation_finished"]
+[connection signal="pressed" from="Door Button L/Door Button" to="." method="on_left_door_pressed"]
+[connection signal="pressed" from="Door Button L/Light Button" to="." method="_on_Light_Button_pressed"]
+[connection signal="pressed" from="Door Button L/Light Button" to="." method="on_left_light_pressed"]
+[connection signal="pressed" from="Door Button R/Door Button" to="." method="on_right_door_pressed"]
+[connection signal="pressed" from="Door Button R/Light Button" to="." method="_on_Light_Button_pressed"]
+[connection signal="pressed" from="Door Button R/Light Button" to="." method="on_right_light_pressed"]
+[connection signal="timeout" from="Light flicker timer" to="." method="_on_Light_flicker_timer_timeout"]
+[connection signal="mouse_entered" from="UI/Camera Trigger" to="." method="_on_Camera_Trigger_mouse_entered"]
+[connection signal="timeout" from="Power Outage Timer" to="." method="_on_Power_Outage_Timer_timeout"]
+[connection signal="timeout" from="Freddy Duration" to="." method="_on_Freddy_Duration_timeout"]
+[connection signal="timeout" from="Scaretimer powerout" to="." method="_on_Scaretimer_powerout_timeout"]
+[connection signal="timeout" from="Night timer" to="." method="_on_Night_timer_timeout"]
+[connection signal="timeout" from="Cams/Cam UI/Signal Cut/Timer" to="." method="_on_signal_working_again"]
+[connection signal="timeout" from="Cams/Cam UI/Freddy/Timer" to="." method="_on_freddy_movement"]
+[connection signal="timeout" from="Cams/Cam UI/Bonnie/Timer" to="." method="_on_bonnie_movement"]
+[connection signal="timeout" from="Cams/Cam UI/Chica/Timer" to="." method="_on_chica_movement"]
+[connection signal="animation_finished" from="Cams/Camera feed" to="." method="_on_Camera_feed_animation_finished"]
+[connection signal="timeout" from="Foxy Countdown" to="." method="_on_Foxy_Countdown_timeout"]
+
+[editable path="Door Button L"]
+[editable path="Door Button R"]
+[editable path="Door L"]
+[editable path="Door R"]
+[editable path="UI/Camera Trigger"]
+[editable path="Cams/Cam UI/Freddy"]
+[editable path="Cams/Cam UI/Bonnie"]
+[editable path="Cams/Cam UI/Chica"]
+[editable path="Cams/Cam UI/Foxy"]

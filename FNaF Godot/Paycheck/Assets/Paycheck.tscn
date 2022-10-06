@@ -1,0 +1,64 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://FNaF 1/210.png" type="Texture" id=1]
+[ext_resource path="res://FNaF 1/522.png" type="Texture" id=2]
+[ext_resource path="res://FNaF 1/523.png" type="Texture" id=3]
+[ext_resource path="res://Transitions/Assets/Fade.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Paycheck/Scripts/Paycheck.gd" type="Script" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Night 5",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Night 6",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "Night 7",
+"speed": 5.0
+} ]
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[node name="Paycheck" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 640, 360 )
+frames = SubResource( 1 )
+animation = "Night 7"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[node name="Button" type="Button" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/disabled = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+
+[node name="Fade" parent="." instance=ExtResource( 4 )]
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="animation_finished" from="Fade/AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+
+[editable path="Fade"]

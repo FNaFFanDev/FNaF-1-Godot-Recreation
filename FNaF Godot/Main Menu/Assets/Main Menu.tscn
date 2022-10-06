@@ -1,0 +1,291 @@
+[gd_scene load_steps=38 format=2]
+
+[ext_resource path="res://FNaF 1/431.png" type="Texture" id=1]
+[ext_resource path="res://FNaF 1/440.png" type="Texture" id=2]
+[ext_resource path="res://FNaF 1/441.png" type="Texture" id=3]
+[ext_resource path="res://FNaF 1/442.png" type="Texture" id=4]
+[ext_resource path="res://Main Menu/Scripts/Main Menu.gd" type="Script" id=5]
+[ext_resource path="res://Static/Assets/Static.tscn" type="PackedScene" id=6]
+[ext_resource path="res://FNaF 1/444.png" type="Texture" id=7]
+[ext_resource path="res://Main Menu/Assets/Button.tscn" type="PackedScene" id=8]
+[ext_resource path="res://FNaF 1/449.png" type="Texture" id=9]
+[ext_resource path="res://FNaF 1/433.png" type="Texture" id=10]
+[ext_resource path="res://FNaF 1/591.png" type="Texture" id=11]
+[ext_resource path="res://FNaF 1/447.png" type="Texture" id=12]
+[ext_resource path="res://FNaF 1/191.png" type="Texture" id=13]
+[ext_resource path="res://FNaF 1/193.png" type="Texture" id=14]
+[ext_resource path="res://FNaF 1/194.png" type="Texture" id=15]
+[ext_resource path="res://FNaF 1/195.png" type="Texture" id=16]
+[ext_resource path="res://FNaF 1/192.png" type="Texture" id=17]
+[ext_resource path="res://FNaF 1/452.png" type="Texture" id=18]
+[ext_resource path="res://FNaF 1/436.png" type="Texture" id=19]
+[ext_resource path="res://FNaF 1/438.png" type="Texture" id=20]
+[ext_resource path="res://FNaF 1/439.png" type="Texture" id=21]
+[ext_resource path="res://FNaF 1/430.png" type="Texture" id=22]
+[ext_resource path="res://FNaF 1/434.png" type="Texture" id=23]
+[ext_resource path="res://FNaF 1/622.png" type="Texture" id=24]
+[ext_resource path="res://FNaF 1/432.png" type="Texture" id=25]
+[ext_resource path="res://Main Menu/Scripts/Button.gd" type="Script" id=26]
+[ext_resource path="res://FNaF 1/450.png" type="Texture" id=27]
+[ext_resource path="res://FNaF 1/443.png" type="Texture" id=28]
+[ext_resource path="res://FNaF 1/526.png" type="Texture" id=29]
+[ext_resource path="res://FNaF 1/FNaF 1 Audio/FNaF_1_Remaster_Main_Menu[YtMp3cc.net].mp3" type="AudioStream" id=30]
+[ext_resource path="res://FNaF 1/FNaF 1 Audio/blip3.wav" type="AudioStream" id=31]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
+"loop": false,
+"name": "Twitch 1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 1 ) ],
+"loop": false,
+"name": "Twitch 2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 1 ) ],
+"loop": false,
+"name": "Twitch 3",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 640, 742 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Scrolling"
+length = 19.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 18, 19 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 640, -15 ), Vector2( 640, 742 ), Vector2( 640, 742 ) ]
+}
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 13 ) ],
+"loop": true,
+"name": "Night 1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ) ],
+"loop": true,
+"name": "Night 2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ) ],
+"loop": true,
+"name": "Night 3",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ) ],
+"loop": true,
+"name": "Night 4",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 16 ) ],
+"loop": true,
+"name": "Night 5",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 186.5, 18.5 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 21 ), ExtResource( 19 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "Blip 1",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 21 ), ExtResource( 19 ), ExtResource( 23 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "Blip 2",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 23 ), ExtResource( 22 ), ExtResource( 21 ) ],
+"loop": false,
+"name": "Blip 3",
+"speed": 8.0
+} ]
+
+[node name="Main Menu" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="Background" type="AnimatedSprite" parent="."]
+position = Vector2( 640, 360 )
+frames = SubResource( 1 )
+animation = "Twitch 3"
+frame = 1
+playing = true
+
+[node name="Twitch timer" type="Timer" parent="Background"]
+wait_time = 2.0
+autostart = true
+
+[node name="Static" parent="." instance=ExtResource( 6 )]
+position = Vector2( 640, 361 )
+
+[node name="Stars" type="Node2D" parent="."]
+
+[node name="Night 5" type="Sprite" parent="Stars"]
+position = Vector2( 81, 336 )
+texture = ExtResource( 25 )
+
+[node name="Night 6" type="Sprite" parent="Stars"]
+position = Vector2( 143, 336 )
+texture = ExtResource( 25 )
+
+[node name="20 mode" type="Sprite" parent="Stars"]
+position = Vector2( 205, 336 )
+texture = ExtResource( 25 )
+
+[node name="Scanline" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.294118 )
+position = Vector2( 640, 742 )
+texture = ExtResource( 18 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Scanline"]
+autoplay = "Scrolling"
+anims/RESET = SubResource( 3 )
+anims/Scrolling = SubResource( 4 )
+
+[node name="Title text" type="Sprite" parent="."]
+position = Vector2( 156, 193 )
+texture = ExtResource( 7 )
+
+[node name="New game button" parent="." instance=ExtResource( 8 )]
+position = Vector2( 158, 419.5 )
+
+[node name="Continue button" parent="." instance=ExtResource( 8 )]
+position = Vector2( 158, 486.5 )
+
+[node name="Sprite" parent="Continue button" index="0"]
+texture = ExtResource( 9 )
+
+[node name="CollisionShape2D" parent="Continue button" index="2"]
+position = Vector2( 1, 1 )
+
+[node name="Night preview" type="Sprite" parent="Continue button"]
+visible = false
+position = Vector2( -64, 28.5 )
+texture = ExtResource( 12 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Continue button/Night preview"]
+position = Vector2( 42, 0 )
+frames = SubResource( 2 )
+animation = "Night 5"
+
+[node name="6th Night Button" parent="." instance=ExtResource( 8 )]
+position = Vector2( 170, 553.5 )
+
+[node name="Sprite" parent="6th Night Button" index="0"]
+position = Vector2( 0, 5 )
+texture = ExtResource( 28 )
+
+[node name="Arrow" parent="6th Night Button" index="1"]
+position = Vector2( -140, 0 )
+
+[node name="CollisionShape2D" parent="6th Night Button" index="2"]
+position = Vector2( 1, 1 )
+shape = SubResource( 6 )
+
+[node name="Custom Night" parent="." instance=ExtResource( 8 )]
+position = Vector2( 172, 623.5 )
+
+[node name="Sprite" parent="Custom Night" index="0"]
+position = Vector2( 39, 5 )
+texture = ExtResource( 29 )
+
+[node name="Arrow" parent="Custom Night" index="1"]
+position = Vector2( -143, 0 )
+
+[node name="CollisionShape2D" parent="Custom Night" index="2"]
+position = Vector2( 1, 1 )
+shape = SubResource( 6 )
+
+[node name="Development Settings" type="Area2D" parent="."]
+position = Vector2( 1087, 662 )
+script = ExtResource( 26 )
+
+[node name="Sprite" type="Sprite" parent="Development Settings"]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 24 )
+
+[node name="Arrow" type="Sprite" parent="Development Settings"]
+visible = false
+position = Vector2( -216, -3 )
+texture = ExtResource( 27 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Development Settings"]
+position = Vector2( -3.5, -4.5 )
+shape = SubResource( 6 )
+
+[node name="Blip" type="AudioStreamPlayer" parent="Development Settings"]
+stream = ExtResource( 31 )
+
+[node name="Version" type="Sprite" parent="."]
+position = Vector2( 61, 702 )
+texture = ExtResource( 11 )
+
+[node name="Copyright" type="Sprite" parent="."]
+position = Vector2( 1156, 703 )
+texture = ExtResource( 10 )
+
+[node name="Blipflash" type="AnimatedSprite" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0.686275 )
+position = Vector2( 640, 360 )
+frames = SubResource( 5 )
+animation = "Blip 3"
+frame = 2
+
+[node name="Timer" type="Timer" parent="Blipflash"]
+autostart = true
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 30 )
+
+[connection signal="timeout" from="Background/Twitch timer" to="." method="_on_Twitch_timer_timeout"]
+[connection signal="input_event" from="New game button" to="." method="_on_New_game_button_input_event"]
+[connection signal="input_event" from="Continue button" to="." method="_on_Continue_button_input_event"]
+[connection signal="mouse_entered" from="Continue button" to="." method="_on_Continue_button_mouse_entered"]
+[connection signal="mouse_exited" from="Continue button" to="." method="_on_Continue_button_mouse_exited"]
+[connection signal="input_event" from="6th Night Button" to="." method="_on_6th_Night_Button_input_event"]
+[connection signal="input_event" from="Custom Night" to="." method="_on_Custom_Night_input_event"]
+[connection signal="input_event" from="Development Settings" to="." method="_on_Development_Settings_input_event"]
+[connection signal="mouse_entered" from="Development Settings" to="Development Settings" method="_on_Button_mouse_entered"]
+[connection signal="mouse_exited" from="Development Settings" to="Development Settings" method="_on_Button_mouse_exited"]
+[connection signal="animation_finished" from="Blipflash" to="." method="_on_Blipflash_animation_finished"]
+[connection signal="timeout" from="Blipflash/Timer" to="." method="_on_Timer_timeout"]
+
+[editable path="Continue button"]
+[editable path="6th Night Button"]
+[editable path="Custom Night"]

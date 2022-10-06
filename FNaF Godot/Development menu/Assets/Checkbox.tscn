@@ -1,0 +1,48 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://FNaF 1/629.png" type="Texture" id=1]
+[ext_resource path="res://FNaF 1/630.png" type="Texture" id=2]
+[ext_resource path="res://Development menu/Scripts/Checkbox.gd" type="Script" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Pressed",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[node name="Checkbox" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Pressed"
+
+[node name="Button" type="Button" parent="."]
+margin_left = -197.0
+margin_top = -222.0
+margin_right = 205.0
+margin_bottom = 184.0
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/focus = SubResource( 4 )
+custom_styles/disabled = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
